@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Icon({icon}) {
+function Icon({icon, href}) {
   return (
     <div className='pointer hover:text-gray-500 text-xl'>
-        <a href='#'>{icon}</a>
+        <a href={href} target="_blank">{icon}</a>
     </div>
   )
 }

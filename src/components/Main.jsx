@@ -31,10 +31,8 @@ function Main() {
                         />
                 </h3>
                 <div className='flex gap-6 mt-6 border-2 border-teal-800 border-opacity-40 p-3 '>
-                    <Icon icon={<FiTwitter />}/>
-                    <Icon icon={<FiFacebook />}/>
-                    <Icon icon={<FiGithub />}/>
-                    <Icon icon={<FiLinkedin />}/>
+                    <Icon icon={<FiFacebook />} href='https://www.facebook.com/remigiusz.szostak.1' />
+                    <Icon icon={<FiGithub />} href='https://github.com/udaceue' />
                 </div>
             </div>
         </div>
