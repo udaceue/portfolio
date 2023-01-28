@@ -72,7 +72,7 @@ function Contact() {
     }
 
         const messageValidation = () => {
-    if(/[\d\w\s]/i.test(messageInput) && messageInput?.length >= 15)
+    if(/^[A-Za-z0-9\s]*$/.test(messageInput) && messageInput?.length >= 15)
       {
         return `Correct Message`
       }
@@ -126,7 +126,7 @@ function Contact() {
                 />
                 <div className='text-red-500'>{emailValidation()}</div>
             </div>
-
+              
             <div className='flex flex-col'>
                 <label className='py-2 md:py-4 font-semibold text-lg'>Company</label>
                 <input className='border-4 border-indigo-200 w-full' 
@@ -144,17 +144,18 @@ function Contact() {
 
             <div className='flex flex-col'>
                 <label className='py-2 md:py-4 font-semibold text-lg'>Message</label>
-                <textarea className="py-8 border-4 border-indigo-200 w-full"
+                <input type="text" className="py-8 border-4 border-indigo-200 w-full"
+                name='userMessage'
                 required
-                pattern="[\d\w\s]i" 
+                pattern="^[A-Za-z0-9\s]*$" 
                 minLength="15" 
                 maxLength="200"
                 onChange={handleMessageInput}
                 value={messageInput}
                 />
                 <div className='text-red-500'>{messageValidation()}</div>
-                 <input type="hidden" name="_gotcha" className='hidden'></input>
             </div>
+                 <input type="hidden" name="_gotcha" className='hidden'></input>
             
         </div>
         </form>
