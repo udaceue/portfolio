@@ -54,7 +54,7 @@ function Sidenav() {
             )
         )}
         
-        <div className='hidden md:block fixed top-[25%] z-10'>
+        <div className='hidden md:block fixed top-[25%] z-[99]'>
                 <a href='#main' className='block rounded-full'>
             <div className='flex flex-col rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 easy-in duration-300'>
                     <FaHome size={20}/>
