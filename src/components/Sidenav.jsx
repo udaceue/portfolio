@@ -75,8 +75,8 @@ function Sidenav() {
 
                 <a href={cv} className='block rounded-full' download="Cv Remigiusz" target='_blank'>
             <div className='flex flex-col rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 easy-in duration-300 relative'>
-                    <div className='absolute w-36 top-0 h-full -left-6 bg-slate-800 rounded-full z-[5] opacity-0 hover:opacity-70'>
-                        <span className='block h-full max-w-max absolute left-16 p-4 text-yellow-200 z-20 font-medium bg-blend-overlay'>Resume</span>
+                    <div className='absolute w-40 top-0 h-full -left-6 bg-slate-800 rounded-full z-[120] opacity-0 hover:opacity-70 ease-in duration-1000'>
+                        <span className='block h-full max-w-max absolute left-16 p-4 text-yellow-200 font-medium bg-blend-overlay'>Resume</span>
                     </div>
                     <span className='z-20'>
                     <SiResurrectionremixos size={20}/>
