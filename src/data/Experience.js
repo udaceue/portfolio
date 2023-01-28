@@ -21,7 +21,7 @@ export const Experience = [
     },
 
     {
-        year:2020 - 2023,
+        year:2020,
         title: "Tenneco Automotive",
         duration: "3 years",
         details: "Smooth production of exhausts systems according to a Kanban idea. Production according to work standardization and documentation",
