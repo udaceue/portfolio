@@ -2,7 +2,7 @@ import React from 'react'
 
 function WorkItem({year, title, duration, details}) {
   return (
-    <div className='flex flex-col p-4'>
+    <div className='flex flex-col p-2'>
         <div className='flex text-center'>
             <div className='w-12 p-2 bg-indigo-800 text-white rounded-md text-center flex items-center justify-center'>{year}</div>
             <div className='m-2 text-indigo-800 text-lg'>{title}</div>
